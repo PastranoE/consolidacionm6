@@ -1,15 +1,27 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
+import NotFound from'@/views/NotFound.vue'
+import ListaJuegos from '@/components/ListaJuegos.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
+  // {
+  //   path: '/',
+  //   name: 'home',
+  //   component: HomeView
+  // },
+  {  
     path: '/',
-    name: 'home',
-    component: HomeView
+    component: ListaJuegos
   },
+
+  {
+    path:'*',
+    component: NotFound
+      },
   {
     path: '/about',
     name: 'about',
@@ -18,6 +30,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   }
+  
 ]
 
 const router = new VueRouter({
