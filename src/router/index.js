@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 // import HomeView from '../views/HomeView.vue'
 import NotFound from'@/views/NotFound.vue'
 import ListaJuegos from '@/components/ListaJuegos.vue'
+import Opiniones from '@/views/Opiniones.vue'
 
 
 Vue.use(VueRouter)
@@ -16,6 +17,10 @@ const routes = [
   {  
     path: '/',
     component: ListaJuegos
+  },
+  {  
+    path: '/Opiniones',
+    component: Opiniones
   },
 
   {

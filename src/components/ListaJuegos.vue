@@ -12,7 +12,7 @@
                 Released: {{ game.released }}<br>
                 Updated: {{ game.updated }}
               </p>
-              <b-button variant="primary"  :to="`/opiniones/${game.name}` ">
+              <b-button variant="primary"  :to="`/Opiniones/${game.name}` ">
                 Opinar
               </b-button>
 
