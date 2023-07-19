@@ -19,7 +19,7 @@ const routes = [
     component: ListaJuegos
   },
   {  
-    path: '/Opiniones',
+    path: '/Opiniones/:gameName',
     component: Opiniones
   },
 
