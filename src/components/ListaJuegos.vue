@@ -15,10 +15,9 @@
               <b-button variant="primary"  :to="`/Opiniones/${game.name}` ">
                 Opinar
               </b-button>
-
-              <button>
-                <i class="fas fa-heart text-danger"></i>
-              </button>
+              <b-button to="Administracion">
+                <i class="fas fa-heart text-danger" ></i>
+              </b-button>
   
             </b-card>
           </div>
@@ -33,6 +32,7 @@
   <script>
   export default {
     name: 'HelloWorld.vue',
+
     data() {
       return {
         games: []

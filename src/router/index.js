@@ -4,6 +4,11 @@ import VueRouter from 'vue-router'
 import NotFound from'@/views/NotFound.vue'
 import ListaJuegos from '@/components/ListaJuegos.vue'
 import Opiniones from '@/views/Opiniones.vue'
+import Administracion from '@/views/Administracion.vue'
+import Rcuenta from '@/views/Rcuenta.vue'
+
+
+
 
 
 Vue.use(VueRouter)
@@ -22,6 +27,15 @@ const routes = [
     path: '/Opiniones/:gameName',
     component: Opiniones
   },
+  {  
+    path: '/Administracion',
+    component: Administracion
+  },
+  {  
+    path: '/registro_cuenta',
+    component: Rcuenta
+  },
+
 
   {
     path:'*',
