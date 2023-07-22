@@ -28,7 +28,7 @@ const routes = [
     component: Opiniones
   },
   {  
-    path: '/Administracion',
+    path: '/Administracion/:gameName',
     component: Administracion
   },
   {  

@@ -12,7 +12,7 @@
                 <textarea class="form-control" placeholder="Tu opinion debe ir aqui..." id="opinion"
                     v-model="opinion"></textarea>
             </div>
-            <button class="btn btn-primary text-start  float-start ms-0" v-on:click="agregar" id="boton">{{ editando?'Editar':'Guardar' }}</button>
+            <button class="btn btn-primary text-start  float-start ms-0" v-on:click="agregar" id="boton">{{ editando?'Actualizar':'Guardar' }}</button>
             <br>
             <br>
             <div>

@@ -15,7 +15,7 @@
               <b-button variant="primary"  :to="`/Opiniones/${game.name}` ">
                 Opinar
               </b-button>
-              <b-button to="Administracion">
+              <b-button :to="`/Administracion/${game.name}`">
                 <i class="fas fa-heart text-danger" ></i>
               </b-button>
   

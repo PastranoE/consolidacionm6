@@ -14,7 +14,7 @@
             </div>
         </div>
         <div v-if="this.nombre!=''">
-        <Rcuenta :nombre="nombre" :apellido="apellido"/>
+        <Rcuenta :nombre="nombre" :apellido="apellido" :juego="$route.params.gameName"/>
         </div>
     </div>
 </template>
